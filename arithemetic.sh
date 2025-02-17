@@ -3,13 +3,14 @@
 echo "Enter two numbers:"
 read num1 num2
 
-echo "Select operation: Addition(+), Subtraction(-), Multiplication(*)"
+echo "Select operation: Addition(+), Subtraction(-), Multiplication(*), Division(/)"
 read operation
 
 case $operation in
     +) result=$((num1 + num2));;
     -) result=$((num1 - num2));;
     \*) result=$((num1 * num2));;
+    /) result=$((num1 / num2));;
     *) echo "Invalid operation"; exit 1;;
 esac
 
